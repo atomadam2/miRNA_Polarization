@@ -7,5 +7,14 @@ miRNAs involved in M1/M2 hyperpolarization are clustered and coordinately expres
 
 List of scripts with descriptions:
 
+PBMC_qPCR_Scatterplot.R - R script to draw scatterplots for pair-wise comparisons of miRNA expression from qPCR data. This will draw both the healthy control and alcoholic hepatitis data as separately colored dots with correlation lines for each group. Script has code for both comparisons in paper, but can also be modified for any comparison. (Figure 6A and Figure 6C)
+
+PBMC_qPCR_Heatmap.R - R script to draw a heatmap of all pair-wise miRNA expression comparisons from qPCR data of healthy controls and alcoholic hepatitis patients. (Figure 6B)
+
 
 List of files with descriptions:
+
+PBMC_miRNA_qPCR.txt - All qPCR data calculated by the ddCT method (average CT of miRNA - average CT of SNORD68 control). HC - Healthy Control, AH - Alcoholic Hepatitis, phenotype labeled under columns "pheno"
+
+PBMC_miRNA_corr.txt - Table of Pearson Correlation Coefficients for all qPCR data, organized such that all Healthy Control comparisons are above the X=Y line and all Alcoholic Hepatitis comparisons are below it.
+
